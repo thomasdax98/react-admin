@@ -8,3 +8,4 @@ export * from "./FormSection";
 export * from "./Input";
 export * from "./ReactSelect";
 export * from "./ReactSelectStaticOptions";
+export * from "./RangeSlider";
