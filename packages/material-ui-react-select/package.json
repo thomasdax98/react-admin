@@ -1,6 +1,6 @@
 {
     "name": "@vivid-planet/material-ui-react-select",
-    "version": "1.0.0-alpha.9",
+    "version": "1.0.0-alpha.10",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
@@ -22,7 +22,8 @@
         "build": "tsc --project ./tsconfig.json",
         "start": "tsc --project ./tsconfig.json --watch",
         "tsc": "tsc --noEmit --skipLibCheck --project ./tsconfig.json && :",
-        "prepare": "npm run build"
+        "prepare": "npm run build",
+        "lint:tslint": "tslint --project ."
     },
     "publishConfig": {
         "access": "public"
