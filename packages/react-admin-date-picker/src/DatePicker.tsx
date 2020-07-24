@@ -12,7 +12,7 @@ interface IProps extends FieldRenderProps<string | Date, HTMLInputElement> {
 }
 
 export const DatePicker: React.FC<IProps> = ({
-    input: { value, onChange },
+    input: { value, onChange, onBlur },
     fullWidth = false,
     color = "default",
     meta,
@@ -33,7 +33,7 @@ export const DatePicker: React.FC<IProps> = ({
     }, [localeName]);
 
     return (
-        <sc.SingleDatePickerWrapper fullWidth={fullWidth} color={color}>
+        <sc.SingleDatePickerWrapper fullWidth={fullWidth} color={color} onBlur={(event: React.FocusEvent<HTMLInputElement>) => onBlur(event)}>
             <AirBNBDatePicker
                 date={selectedDate}
                 id="single_date_picker"
