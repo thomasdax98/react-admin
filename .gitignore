@@ -1,5 +1,0 @@
-**/node_modules
-**/lib
-**/.watchmanconfig
-/.docker-sync
-storybook-static/

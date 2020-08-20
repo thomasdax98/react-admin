@@ -1,4 +1,0 @@
-sudo: false
-language: minimal
-script:
-    - INSTALL_DEPS=1 RUN_AS_UID=`id -u` ./lint.sh
